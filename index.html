@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ScamAwareElders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sticky-top border-bottom">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-4">ScamAwareElders</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#what-is-scams" class="nav-link">What is a Scam ?</a></li>
+          <li class="nav-item"><a href="#type-of-scams" class="nav-link">Types of Scams</a></li>
+          <li class="nav-item"><a href="#ups-i-clicked" class="nav-link">Ups! I clicked it!</a></li>
+        </ul>
+      </header>
+    </nav>
+    </div>
+    <main>
+      <section class="hero">
+    <div class="container bg-transparent col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="img/hero.jpg  " class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Educating the Elderly 👴👵 about scams</h1>
+          <p class="lead">Stay informed, stay protected.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a type="button" class="btn btn-primary btn-lg px-4 me-md-2"  href="#search-url">Search</a>
+            <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#what-is-scams">Learn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="search-url">
+    <div class="container bg-secondary bg-opacity-25 col-xxl-8 px-4 py-5">
+    <div class="d-flex flex-row align-items-center g-5 py-5">
+      <div class="container-fluid">
+        <h2 class="error"></h3>
+        <div class="d-flex flex-column">
+        <span class="fs-2 text-dark fw-bold">Is this link a phishing?</span>
+        <span class="fs-5 mb-3 text-dark">Please enter the link to verify its legitimacy or detect phishing.</span>
+      </div>
+        <div class="d-flex">
+          <input class="form-control me-2 fs-4" type="text" id="search_input" placeholder="https://">
+          <button class="btn btn-success btn-lg text-light" type="submit" id="search_button">Search</button>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+<section class="section-results">
+  <div class="container col-xxl-8 px-4 py-4">
+  <div class="container_url"></div>
+  <article class="modal_url"></article>
+  </div>
+</section>
+<section id="what-is-scams">
+  <div class="container-fluid bg-transparent col-xxl-8 px-4 pt-2" >
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img/scam-square.jpg" class="img-fluid rounded-start" alt="scam">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title fs-3 text-dark fw-bold mb-3 mt-2">What is a scam ?</h5>
+            <p class="card-text fs-5 mb-3 text-dark">A scam is when someone tries to trick you into giving them your money or personal information by pretending to be someone they're not. 
+              They may use phone calls, emails, or other methods to deceive you. For example, <strong>they might claim to be a government official, 
+              a bank representative, or a grandchild in need of money</strong>. They may use high-pressure tactics, create a sense of urgency, or offer 
+              false promises to gain your trust. Scammers target older adults because they may be more vulnerable or trusting. <strong>It's important to be cautious, 
+              verify information</strong>, and seek advice from a trusted family member, friend, or financial professional before taking any action or giving out 
+              personal information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section id="type-of-scams">
+  <div class="container-fluid bg-transparent col-xxl-8 px-4 py-5" >
+    <div class="d-flex flex-column">
+    <span class="fs-3 text-dark fw-bold mb-3">Types of scams</span>
+  </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <strong class="fs-5">Phishing scams</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+            Scammers send fake emails, text messages, or create fake websites pretending to be a trustworthy entity, such as a bank, government agency, or a well-known company, to trick you into revealing personal information, such as passwords, credit card numbers, or Social Security numbers.          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong class="fs-5">Romance scams</strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+            Scammers create fake online profiles on dating websites or social media platforms and pretend to be interested in a romantic relationship to gain your trust and eventually ask for money or personal information.          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong  class="fs-5">Investment scams</strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+            Scammers promise high returns on investments or offer exclusive investment opportunities online, but in reality, they are trying to take your money without delivering the promised returns.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <strong  class="fs-5">Medicare or health insurance scams</strong>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+            Scammers claim to be from the Social Security Administration and request personal information, such as Social Security numbers or bank account numbers, to gain unauthorized access or commit identity theft. create fake online profiles on dating websites or social media platforms and pretend to be interested in a romantic relationship to gain your trust and eventually ask for money or personal information.          </div>
+        </div>
+        </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <strong class="fs-5">Tech support scams</strong>
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+            Scammers pose as technical support representatives and contact you claiming that your computer has a problem or virus, and ask for remote access or payment to fix the issue, when in reality, they are trying to gain unauthorized access or steal your money.        </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <strong class="fs-5">Smishing scams</strong>
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+            Scammers send text messages pretending to be a trustworthy entity, such as a bank, and ask for personal information or prompt you to click on a link that leads to a fake website.        </div>
+      </div>
+    </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <strong  class="fs-5">Prize or gift card scams</strong>
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+            Scammers send text messages claiming that you have won a prize or gift card and ask for personal information or payment to claim the prize, which is usually nonexistent.      </div>
+      </div>
+     </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <strong  class="fs-5">Donation scams</strong>
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body fs-5">
+          Scammers send text messages soliciting donations for fake charities or causes, and ask for payment or personal information to make the donation, but the donations end up in their pockets instead of going to a legitimate charitable organization.    </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="ups-i-clicked">
+  <div class="container-fluid col-xxl-8 px-4 pt-3 pb-5" >
+    <div class="d-flex flex-column">
+    <span class="alert alert-danger fs-3 fw-bold text-dark mb-2">🚨 Ups! I clicked it!</span>
+    <span class="fs-5 fw-bold text-dark py-3 px-2">If you accidentally gave your login information (username & password, credit or debit card number, etc.) to a scammer, <br>there are some things you can do to protect yourself:</span>
+    <div class="card">
+     <div class="card-body">
+    <ul>
+     <li><span class="fs-5 lh-lg text-dark"><strong>Change your password</strong> right away on your official bank to something strong and unique that you haven't used before. <br>You can use this Password Generator: <a href="https://www.avast.com/random-password-generator" target="_blank">Password Generator</a> (Google).</span>
+     </li>
+     <li><span class="fs-5 lh-lg text-dark">If you gave your information to a fake company/bank, <strong>contact the real company/bank</strong> and let them know what happened.<br><strong>They can help you secure your account and what to do next.</strong></span>
+     </li>
+     <li><span class="fs-5 lh-lg text-dark"><strong>Enable two-factor authentication</strong> on your official bank. This adds an extra layer of protection by requiring a code sent to your phone in addition to your password.</span>
+     </li>
+     <li><span class="fs-5 lh-lg text-dark"><strong>Keep an eye on your accounts</strong> for any suspicious activity or charges, and report them to the company or bank.</span>
+     </li>
+     <li><span class="fs-5 lh-lg text-dark">Finally, <strong>be careful of any unexpected emails or phone calls</strong>, and consider monitoring your credit report for any unusual activity.</span>
+     </li>
+     <li><span class="fs-5 lh-lg text-dark"><strong>Don't know how to do those steps ?</strong> Please stay calm and contact some familiar or friend to help you.</span>
+     </li>
+     </ul>
+       </div>
+     </div>
+    </div>
+  </div>
+</section>
+<section>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Ezeba</span>
+        </div>
+        <a class="text-body-secondary" href="https://github.com/ezebar" target=_blank ><ion-icon size="large" name="logo-github"></ion-icon></a>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">API:<a class="footer_link" href="https://rapidapi.com/user/Exerra"target=_blank>Exerra</a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </main>
+  </body>
+</html>
+
+
+
+
