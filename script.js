@@ -1,5 +1,5 @@
 'use strict'
-import ANTISCAM_API_KEY from "./config.js"
+const ANTISCAM_API_KEY = require("./config.js")
 
 const searchInput = document.getElementById("search_input");
 const searchButton = document.getElementById("search_button");
