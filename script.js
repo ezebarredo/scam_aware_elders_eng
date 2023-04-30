@@ -1,12 +1,11 @@
 'use strict'
-import ANTISCAM_API_KEY from "./config.js"
 
 const searchInput = document.getElementById("search_input");
 const searchButton = document.getElementById("search_button");
 const containerUrl = document.querySelector('.container_url');
 
 
-const apiKey = ANTISCAM_API_KEY;
+const apiKey = '3e00adc055mshedff2f9b7f82175p1e6212jsn745997b83f5a';
 let urlCheck = '';
 
 const init = () => {
