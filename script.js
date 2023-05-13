@@ -5,7 +5,7 @@ const searchButton = document.getElementById("search_button");
 const containerUrl = document.querySelector('.container_url');
 
 
-const apiKey = '3e00adc055mshedff2f9b7f82175p1e6212jsn745997b83f5a';
+const apiKey = '';
 let urlCheck = '';
 
 const init = () => {
