@@ -3,4 +3,4 @@
 - A short guide to help elders be informed about online scams.
 - An phishing API that can be used to verify suspicious URLs and take action in case personal information has been shared with scammers.
 
-Site: https://ezebar.github.io/scam_aware_elders_eng/
+Site: https://ezebarredo.github.io/scam_aware_elders_eng/
